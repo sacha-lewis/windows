@@ -11,18 +11,18 @@ choco install firefox-dev --pre -y
 choco install git -y
 choco install openssh --pre -y
 choco install opera-developer -y
-choco install dropbox -y
 choco install tailscale -y
 choco install ultravnc -y
 choco install googledrive -y
 choco install snagit -y
 choco install skype -y
 choco install virtualbox -y
-choco install xampp-81
 ```
 
 Optional Install
 ```shell
+choco install dropbox -y
+choco install xampp-81
 choco install steam -y
 choco install nvidia-display-driver -y
 choco install microsoft-teams -y
@@ -63,41 +63,40 @@ my.ini - Increase packet size to allow to import large files
 PhpStorm
 - Settings -> Appearance & Behaviour -> System Settings -> Default directory for projects
 
-### Remote Management (Default)
+NOTE:
+- Explorer show hidden files
+
+### Remote Management (RDP) 
+Best method to remotely manage a computer
+NOTE: Requires Windows PRO (Home does NOT work)
+- Settings -> Remote Desktop Settings
+- Requires the user/pass of the windows account
+
+### Remote Viewing / controlling mouse keyboard 
 UltraVNC WINDOWS (Free Method)
+- Already installed above
 - Search for 'UltraVNC server' -> Settings -> service -> install -> start service
 - Set secure password
-- login with vnc://tailscaleIP:590
+- login with vnc://tailscaleIP:5900
 - Multiple Screen on WINDOWS only; MAC only displays ONE monitor (You can disable the extra screens snd just use the primary on all OS's)
 
 Start VNC server service before user logs into account
 - This will ensure you can login if the computer is restarted (Altering the Service as a specific user does not work)
 - Create a task Scheduler assigned to your user with high privileges
-- Run: whether user is logged on or not (Check, run with highest priviledges)
+- Run: whether user is logged on or not (Check, run with highest privileges)
 - Trigger: Begin the task at Startup, Delay task for 30 seconds,
 - Actions: Start a program: "C:\Program Files\uvnc bvba\UltraVNC\winvnc.exe" Add arguments (optional) -service
 - Settings: If the task fails, restart every: 1 minute - attempt to restart up to 3 times
 
-RDP (Remote Desktop)
-- MacOS
-- Requires Windows Pro
-
 iPad RealVNC (Free)
 - easy to use mouse with this program to control another computer with VNC
 - login with vnc://tailscaleIP:5900
-
-RealVNC (Paid Method)
-- Requires an account that costs per device and per month
-- Supports multiple Monitors on WINDOWS and MAC
 
 MacOS - included VNC
 - Included with MacOS is the VNC server
 - System Preferences - Sharing - Screen Sharing
 - Computer settings - CHECK VNC viewers may control screen with password
 - Password allows to get access, but will also need the user of the computer password to see the screen
-
-NOTE:
-- Explorer show hidden files
 
 PhpStorm
 - Settings -> Appearance & Behaviour -> Appearance -> UI Options -> Show main menu in a separate menu bar
