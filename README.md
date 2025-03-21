@@ -17,10 +17,12 @@ choco install googledrive -y
 choco install snagit -y
 choco install skype -y
 choco install virtualbox -y
+choco install auto-dark-mode -y
 ```
 
 Optional Install
 ```shell
+choco install docker-desktop
 choco install dropbox -y
 choco install xampp-81
 choco install steam -y
