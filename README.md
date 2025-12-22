@@ -1,34 +1,8 @@
 Install software on a Windows Computer
 - Open PowerShell as admin and paste in the install script from  https://chocolatey.org/install
 - Run the desired script to install software on your computer
-```shell
-# Install with PowerShell
-choco install powertoys -y
-choco install libreoffice-fresh -y
-choco install phpstorm -y
-choco install pycharm-community -y
-choco install firefox-dev --pre -y
-choco install git -y
-choco install openssh --pre -y
-choco install opera-developer -y
-choco install tailscale -y
-choco install ultravnc -y
-choco install googledrive -y
-choco install snagit -y
-choco install skype -y
-choco install virtualbox -y
-choco install auto-dark-mode -y
-```
 
-Optional Install
-```shell
-choco install docker-desktop
-choco install dropbox -y
-choco install xampp-81
-choco install steam -y
-choco install nvidia-display-driver -y
-choco install microsoft-teams -y
-```
+#### Use CHOCO to install all programs with index.txt
 
 #### Xampp Server
 Allows to test locally.
@@ -45,6 +19,8 @@ upload_max_filesize=400M
 
 my.ini - Increase packet size to allow to import large files
 
+### Fancy Zones
+- override window snap 
 
 #### Opera
 - Install RainDrop.io bookmark extension

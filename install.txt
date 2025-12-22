@@ -1,0 +1,20 @@
+# Main
+choco install powertoys -y
+choco install libreoffice-fresh -y
+choco install phpstorm -y
+choco install firefox-dev --pre -y
+choco install git -y
+choco install openssh --pre -y
+choco install tailscale -y
+choco install ultravnc -y
+choco install googledrive -y
+choco install snagit -y
+choco install docker-desktop -y
+choco install bitwarden -y
+choco install obsidian -y
+
+choco install chatgpt -y
+
+# optional
+choco install microsoft-teams -y
+choco install googlechrome -y
