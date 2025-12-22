@@ -29,6 +29,30 @@ my.ini - Increase packet size to allow to import large files
 - Install Bitwarden for password management
   https://addons.opera.com/en/extensions/details/bitwarden-free-password-manager/
 
+#### Bitwarden 
+- Set SSH Agent in bitwarden
+- Open Powershell as admin
+  - Get-Service ssh-agent
+  - windows default should not be running, should say openssh agent
+  - How to force set
+  - Stop-Service ssh-agent
+    Set-Service ssh-agent -StartupType Disabled
+- Set SSH_AUTH_SOCK for powershell
+```angular2html
+#temp
+$env:SSH_AUTH_SOCK="\\.\pipe\openssh-ssh-agent"
+#permantent
+setx SSH_AUTH_SOCK "\\.\pipe\openssh-ssh-agent"
+```
+Close all poewrshell windows then reopen and verify
+```angular2html
+echo $env:SSH_AUTH_SOCK
+```
+
+      - 
+
+
+
 #### Firefox
 - Install DarkMode extensions:
   https://addons.mozilla.org/en-US/firefox/addon/darkreader/
