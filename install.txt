@@ -15,7 +15,9 @@ choco install obsidian -y
 
 choco install chatgpt -y
 
-choco install auto-dark-mode
+choco install auto-dark-mode -y
+
+choco install nano -y
 
 # optional
 choco install microsoft-teams -y
