@@ -4,21 +4,6 @@ Install software on a Windows Computer
 
 #### Use CHOCO to install all programs with index.txt
 
-#### Xampp Server
-Allows to test locally.
-Make the following adjustments
-
-PHP.ini
-```php
-# uncomment
-extension=intl
-# increase
-post_max_size=400M
-upload_max_filesize=400M
-```
-
-my.ini - Increase packet size to allow to import large files
-
 ### Fancy Zones
 - override window snap 
 

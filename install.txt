@@ -6,7 +6,7 @@ choco install firefox-dev --pre -y
 choco install git -y
 choco install openssh --pre -y
 choco install tailscale -y
-choco install ultravnc -y
+
 choco install googledrive -y
 choco install snagit -y
 choco install docker-desktop -y
@@ -19,6 +19,9 @@ choco install auto-dark-mode -y
 
 choco install nano -y
 
+choco install nomachine -y
+
 # optional
 choco install microsoft-teams -y
 choco install googlechrome -y
+choco install ultravnc -y
