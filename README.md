@@ -57,6 +57,11 @@ Dropbox
 ### Fancy Zones
 - override window snap 
 
+## Power Options
+Disable sleep when connected to power
+
+
+
 
 
 
