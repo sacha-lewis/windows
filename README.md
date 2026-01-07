@@ -17,9 +17,11 @@ Install software on a Windows Computer
 #### Bitwarden 
 - Set SSH Agent in bitwarden
 - Open Powershell as admin
-  - Get-Service ssh-agent
-  - windows default should not be running, should say openssh agent
-  - How to force set
+```aiignore
+Get-Service ssh-agent
+# You should see  OpenSSH Authentication Agent should NOT saw windows or similar
+```
+How to force set
   - Stop-Service ssh-agent
     Set-Service ssh-agent -StartupType Disabled
 - Set SSH_AUTH_SOCK for powershell
