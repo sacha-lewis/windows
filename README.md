@@ -2,26 +2,16 @@ Install software on a Windows Computer
 - Open PowerShell as admin and paste in the install script from  https://chocolatey.org/install
 - Run the desired script to install software on your computer
 
-#### Use CHOCO to install all programs with index.txt
+#### Use CHOCO to install all programs with install.txt
 
-### Fancy Zones
-- override window snap 
-
-#### Opera
-- Install RainDrop.io bookmark extension
-  https://help.raindrop.io/install-extension
-
-- Install Bitwarden for password management
-  https://addons.opera.com/en/extensions/details/bitwarden-free-password-manager/
-
-#### Bitwarden 
+#### Bitwarden
 - Set SSH Agent in bitwarden
 - Open Powershell as admin
-  - Get-Service ssh-agent
-  - windows default should not be running, should say openssh agent
-  - How to force set
-  - Stop-Service ssh-agent
-    Set-Service ssh-agent -StartupType Disabled
+    - Get-Service ssh-agent
+    - windows default should not be running, should say openssh agent
+    - How to force set
+    - Stop-Service ssh-agent
+      Set-Service ssh-agent -StartupType Disabled
 - Set SSH_AUTH_SOCK for powershell
 ```angular2html
 #temp
@@ -34,10 +24,6 @@ Close all poewrshell windows then reopen and verify
 echo $env:SSH_AUTH_SOCK
 ```
 
-      - 
-
-
-
 #### Firefox
 - Install DarkMode extensions:
   https://addons.mozilla.org/en-US/firefox/addon/darkreader/
@@ -47,12 +33,63 @@ echo $env:SSH_AUTH_SOCK
 #### TailScale
 - Login and install client
 
+
+
+
 PhpStorm
 - Settings -> Appearance & Behaviour -> System Settings -> Default directory for projects
 
 NOTE:
 - Explorer show hidden files
 
+
+PhpStorm
+- Settings -> Appearance & Behaviour -> Appearance -> UI Options -> Show main menu in a separate menu bar
+
+Snagit
+- set to image
+- Share - file - JPG - automatic nameing - downloads - JPG -
+
+Dropbox
+- Only sync folders: Software
+
+### Fancy Zones
+- override window snap 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Deprecated = = = = = = = = = = = = = = = = = = 
+
+#### Opera
+- Install RainDrop.io bookmark extension
+  https://help.raindrop.io/install-extension
+
+- Install Bitwarden for password management
+  https://addons.opera.com/en/extensions/details/bitwarden-free-password-manager/
+
+  
 ### Remote Management (RDP) 
 Best method to remotely manage a computer
 NOTE: Requires Windows PRO (Home does NOT work)
@@ -84,16 +121,6 @@ MacOS - included VNC
 - System Preferences - Sharing - Screen Sharing
 - Computer settings - CHECK VNC viewers may control screen with password
 - Password allows to get access, but will also need the user of the computer password to see the screen
-
-PhpStorm
-- Settings -> Appearance & Behaviour -> Appearance -> UI Options -> Show main menu in a separate menu bar
-
-Snagit
-- set to image
-- Share - file - JPG - automatic nameing - downloads - JPG -
-
-Dropbox
-- Only sync folders: Software
 
 Software
 - Dark / Light icon on task bar
