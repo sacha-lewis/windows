@@ -4,6 +4,12 @@ Install software on a Windows Computer
 
 #### Use CHOCO to install all programs with install.txt
 
+# Remote Login with NoMachine
+Nomachine allows to remotely control a computer easily
+
+# TailScale
+Login to TailScale
+
 #### Bitwarden
 - Set SSH Agent in bitwarden
 - Open Powershell as admin
@@ -31,18 +37,11 @@ echo $env:SSH_AUTH_SOCK
 - Install Bitwarden extension:
   https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/
 
-#### TailScale
-- Login and install client
-
-
-
-
 PhpStorm
 - Settings -> Appearance & Behaviour -> System Settings -> Default directory for projects
 
 NOTE:
 - Explorer show hidden files
-
 
 PhpStorm
 - Settings -> Appearance & Behaviour -> Appearance -> UI Options -> Show main menu in a separate menu bar
