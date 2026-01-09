@@ -66,12 +66,67 @@ Disable sleep when connected to power
 
 
 
+# Fixing OPENSSH issues
+
+DO NOT SETUP ssh configurations in phpstorm like ai tells you 
+- just runn the remote host command and it will work
 
 
 
+Open non-admin powershell
+```aiignore
+Get-Command ssh -All
+```
+Ensure openSSH is FIRST
+
+optioanl disable the windows SSH
+- Windowws SETTINGS - optional features - (view or edit optional features) - remove openSSH client
+- Restart windows and verify where.exe ssh and only ONE should appear
+
+```aiignore
+ssh -V
+# GOOD = OpenSSH_for_Windows_8.6p1 does NOT mean “Windows built-in OpenSSH”
+```
+
+Verify bitwarden agent
+```aiignore
+echo $env:SSH_AUTH_SOCK
+```
+
+Verify SSH keys
+```aiignore
+# this can be empty it seems
+echo $env:SSH_AUTH_SOCK
+
+ssh-add -l
+# this SHOULD show keys
+```
+
+At this point ssh on powershell should work
 
 
+### Verify ssh agent is running
+```aiignore
+Get-Service ssh-agent
+# if not running start it
 
+
+Set-Service -Name ssh-agent -StartupType Automatic
+Start-Service ssh-agent
+Get-Service ssh-agent
+# this should start up the ssh-agent
+
+#start ssh client
+Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+
+#start ssh client
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+
+#start ssh server
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+
+
+```
 
 
 
