@@ -4,6 +4,9 @@ Install software on a Windows Computer
 
 #### Use CHOCO to install all programs with install.txt
 
+# Phpstorm
+- ONLY use PhpStorm-2025.2.5.exe (no issues with Bitwarden SSH-Agent)
+
 # TailScale
 Login to TailScale
 
