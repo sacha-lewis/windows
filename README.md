@@ -19,6 +19,7 @@ Nomachine allows to remotely control a computer easily
 ```aiignore
 ssh -V
 # GOOD = OpenSSH_for_Windows_8.6p1 does NOT mean “Windows built-in OpenSSH”
+# Agent should not be running
 ```
 
 #### Firefox
