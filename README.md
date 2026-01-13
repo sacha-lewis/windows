@@ -47,6 +47,7 @@ Dropbox
 
 ### Fancy Zones
 - override window snap 
+- Diable windows snapping (Settings -> System -> Snap Windows = OFF))
 
 ## Power Options
 Disable sleep when connected to power
