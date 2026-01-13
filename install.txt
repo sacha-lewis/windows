@@ -29,6 +29,8 @@ choco install nano -y
 
 choco install libreoffice-fresh -y
 
+choco install join.me -y
+
 DONE
 
 # optional

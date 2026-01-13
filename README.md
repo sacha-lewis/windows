@@ -52,9 +52,11 @@ Dropbox
 ## Power Options
 Disable sleep when connected to power
 
-
-
-
+## NoMachine
+- WIN + R -> mmsys.cpl
+- Go to the Recording tab > Select your microphone > Click Properties > Advanced tab
+- Uncheck both: Allow applications to take exclusive control of this device & Give exclusive mode applications priority
+- Options - Audio - Change Settings - uncheck mute audio on the server
 
 
 
