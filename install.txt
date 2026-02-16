@@ -31,6 +31,17 @@ choco install libreoffice-fresh -y
 
 choco install join.me -y
 
+
+choco install nodejs-lts -y
+
+# npm install -g @openai/codex
+
+
+
+
+
+
+
 DONE
 
 # optional
