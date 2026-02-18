@@ -34,7 +34,16 @@ choco install join.me -y
 
 choco install nodejs-lts -y
 
-# npm install -g @openai/codex
+# this ensures npm can work in powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# confirm node works
+node -v
+
+# confirm npm
+npm -v
+
+npm install -g @openai/codex
 
 
 
