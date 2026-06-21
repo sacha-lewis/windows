@@ -9,6 +9,3 @@ sudo apt install -y tmux
 # Tmux version
 tmux -V
 
-
-
-
